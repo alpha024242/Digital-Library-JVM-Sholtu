@@ -1,0 +1,177 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f8f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Top */
+.header-top {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+}
+.school-logo {
+    height: 70px;
+    margin-right: 15px;
+}
+.school-title h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1b3a8c;
+}
+.school-title p {
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #e74c3c;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-item {
+    display: block;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-item:hover {
+    background-color: #c0392b;
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+/* Library Banner */
+.library-banner {
+    background-color: #0b2a58;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.library-banner h2 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Main Section */
+main {
+    padding: 40px 20px;
+}
+.about-section {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.about-section h2 {
+    font-size: 2em;
+    color: #002f5f;
+    margin-bottom: 10px;
+}
+.about-section .statement {
+    font-size: 1.2em;
+    background: #e8f0fe;
+    border-left: 5px solid #004080;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+
+/* Contact */
+#contact {
+    background: #e3f2fd;
+    padding: 40px 15px;
+    margin-top: 20px;
+    text-align: center;
+    color: #004080;
+}
+
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-info, .librarian-info {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.contact-info a, .librarian-info a {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.contact-info p, .librarian-info p {
+    margin-bottom: 10px;
+}
+#contact {
+    background: #e3f2fd;
+    padding: 40px 0;
+    margin-top: 0;
+    text-align: center;
+    color: #004080;
+    width: 100vw;         /* Force full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;   /* Cancel parent container's center align */
+    margin-right: -50vw;
+}
+.contact-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Footer */
+footer {
+    background: #0d47a1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer .credit {
+    display: block;
+    font-style: italic;
+    margin-top: 5px;
+}
