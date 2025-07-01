@@ -177,3 +177,76 @@ footer .credit {
     font-style: italic;
     margin-top: 5px;
 }
+
+
+/* Hamburger Button Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Animate to X */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        margin: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.3s ease;
+        background-color: #e74c3c;
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .nav-links li {
+        margin: 12px 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 12px 0;
+    }
+}
+
+.navbar {
+    margin-top: -10px;
+}
+
