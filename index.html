@@ -6,16 +6,23 @@
     <title>Jindal Vidya Mandir Sholtu - Digital Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    
+<script>
+    function toggleNewsletter() {
+        document.querySelector('.newsletter-list').classList.toggle('active');
+    }
+</script>
+
 <script>
     function toggleMenu() {
         document.querySelector('.nav-links').classList.toggle('active');
         document.querySelector('.hamburger').classList.toggle('active');
     }
 </script>
-    
+
+
+
+<body>
     <!-- Header -->
    <header>
     <div class="header-top">
@@ -49,6 +56,26 @@
 
 
 </header>
+
+<div class="content-wrapper">
+    <aside id="newsletters" class="newsletter-box">
+        <button class="newsletter-toggle" onclick="toggleNewsletter()">📬 Monthly Newsletters</button>
+        <h2 class="section-title">Monthly Newsletters</h2>
+        <div class="newsletter-list">
+            <ul>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2025/07/Sholtu-Newsletter-june-2025.pdf" target="_blank">June 2025 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2025/06/Sholtu-Newsletter-May-2025.pdf" target="_blank">May 2025 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2025/05/Sholtu-Leaflet-April-2025.pdf" target="_blank">April 2025 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2025/04/Newsletter-march-2025.pdf" target="_blank">March 2025 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2024/12/Newsletter-November-2024_1-1.pdf" target="_blank">November 2024 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2024/11/Newsletter-October-2024_1.pdf" target="_blank">October 2024 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2024/10/Newsletter-September-2024.pdf" target="_blank">September 2024 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2024/09/LEAFLET-AUGUST-2024.pdf" target="_blank">August 2024 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2024/08/Newsletter-July-2024.pdf" target="_blank">July 2024 Newsletter</a></li>
+                <li><a href="https://jvm.in/jvmsholtu/wp-content/uploads/2024/07/NEWSLETTER-JUNE-2024.pdf" target="_blank">June 2024 Newsletter</a></li>
+            </ul>
+        </div>
+    </aside>
 
     <!-- About Section -->
     <section id="about">
@@ -85,6 +112,7 @@ In this digital age, where the pursuit of wisdom transcends the boundaries of br
 I urge you to make the most of this extraordinary opportunity and embrace the world of learning that is now, more than ever, at your fingertips. Let us together build a culture of intellectual curiosity, critical thinking, and academic excellence.</p>
         </div>
     </section>
+</div>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -101,6 +129,8 @@ I urge you to make the most of this extraordinary opportunity and embrace the wo
             </div>
         </div>
     </section>
+
+    
 
     <!-- Footer -->
     <footer>
