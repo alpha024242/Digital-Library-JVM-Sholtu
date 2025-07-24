@@ -118,7 +118,7 @@ body {
 .profile img {
     width: 120px;
     height: 120px;
-    border-radius: 8px !important;
+    border-radius: 0px !important;
     margin-bottom: 10px;
     object-fit: cover;
     border: 3px solid #0d47a1;
