@@ -246,3 +246,25 @@ footer .credit {
     margin-top: -10px;
 }
 
+/* Direct Audio */
+
+.direct-audio {
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.direct-audio h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.direct-audio ul {
+  padding-left: 20px;
+}
+
+.direct-audio ul li {
+  margin: 8px 0;
+}
