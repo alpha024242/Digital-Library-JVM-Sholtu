@@ -248,6 +248,10 @@ footer .credit {
 
 /* Direct Audio */
 
+main {
+  padding: 30px 10%;
+}
+
 .direct-audio {
   margin-bottom: 40px;
   background: #fff;
